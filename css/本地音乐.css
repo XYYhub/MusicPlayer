@@ -1,0 +1,120 @@
+#local_download{
+    width:1570px;
+    height:1380px;
+    margin: auto;
+    display: none;
+    position: relative;
+    left: 100px;
+    top: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#download_title{
+    padding-top: 1px;
+}
+#download_title_{
+    font-size:64px;
+    font-weight:bold;
+    color:black;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#mymusic{
+    width:785px;
+    height:45px;
+}
+.mymusic_{
+    float: left;
+    margin-left: 54px;
+}
+#cc_2_1{
+    color:#31c27c;
+}
+.mymusic_:hover{
+    cursor: pointer;
+    color:#31c27c;
+    border-bottom:5px solid;
+}
+#mymusic span{
+    font-size: 24px;
+}
+#local_music{
+    width:1570px;
+    height:500px;
+    display:block;
+}
+#download_music{
+    width:1570px;
+    height:500px;
+    display:none;
+}
+#downloading{
+    width:1570px;
+    height:500px;
+    display:none;
+}
+#song,#singer,#album,#size_{
+    float:left;
+}
+#song{
+    height:30px;
+    width:600px;
+    margin-left:55px;
+}
+#singer{
+    height:30px;
+    width:350px;
+}
+#album{
+    height:30px;
+    width:350px;
+}
+.song_name,.singer_name,.album_name,.size_name{
+    list-style: none;
+    margin-left: -40px;
+}
+#local_music span,#download_music span,#downloading span{
+    font-size: 24px;
+}
+
+.notice_{
+    position: relative;
+    left: -700px;
+    top: 55px;
+}
+
+.notice_1{
+    position: relative;
+    left: 675px;
+    top: 55px;
+}
+
+.notice{
+    clear: both;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    left: -10px;
+    top: 60px;
+}
+.buttom_{
+    text-align: center;
+    font-size: 36px;
+    border:0px solid;
+    width:200px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: 600px;
+    top: 70px;
+}
+
+.link_style{
+    text-decoration: none;
+    color: #000;
+}
+.line_1{
+    background: #f3f9f1;
+}
+.line_2{
+    background: #f0fcff;
+}

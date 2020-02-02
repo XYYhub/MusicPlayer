@@ -1,0 +1,85 @@
+#i_like{
+    width:1570px;
+    height:1380px;
+    margin: auto;
+    display: none;
+    position: relative;
+    left: 100px;
+    top: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#ilike_title{
+    padding-top: 1px;
+}
+#ilike_title_{
+    font-size:64px;
+    font-weight:bold;
+    color:black;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#ilikemusic{
+    width:785px;
+    height:45px;
+}
+.ilikemusic_{
+    float: left;
+    margin-left: 54px;
+}
+#cc1{
+    color:#31c27c;
+}
+.ilikemusic_:hover{
+    cursor: pointer;
+    color:#31c27c;
+    border-bottom:5px solid;
+}
+#ilikemusic span{
+    font-size: 24px;
+}
+#music_1{
+    width:1570px;
+    display:block;
+}
+#music_list{
+    width:1570px;
+    display:none;
+}
+#music_album{
+    width:1570px;
+    display:none;
+}
+#song_1,#singer_1,#album_1{
+    float:left;
+}
+#song_1{
+    height:30px;
+    width:600px;
+    margin-left:55px;
+}
+#singer_1{
+    height:30px;
+    width:350px;
+}
+#album_1{
+    height:30px;
+    width:350px;
+}
+.song_name_1,.singer_name_1,.album_name_1{
+    list-style: none;
+    margin-left: -40px;
+}
+#music_1 span,#music_list span,#music_album span{
+    font-size: 24px;
+}
+
+.link_style{
+    text-decoration: none;
+    color: #000;
+}
+.line_1{
+    background: #f3f9f1;
+}
+.line_2{
+    background: #f0fcff;
+}

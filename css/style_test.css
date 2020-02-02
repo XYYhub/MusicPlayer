@@ -1,0 +1,329 @@
+.TOP{
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(80,80,80,0.7);
+}
+
+#logo{
+    position:fixed;
+    left:15px;
+    top:5px;
+}
+#logopic{
+    position:fixed;
+    left:363px;
+    top:15px;
+}
+
+.search{
+    position:fixed;
+    left:630px;
+    top:63px;
+}
+
+#searchkey{
+    border-radius: 10px;
+    width: 300px;
+    position: fixed;
+    left: 565px;
+    top: 75px;
+}
+
+.userinfo{
+    position:fixed;
+    right:30px;
+    top:opx;
+    width:200px;
+    height:100px;
+}
+
+#avatar{
+    width:80px;
+    height:80px;
+    position:fixed;
+    right:150px;
+    top:10px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    border-radius:100%;
+}
+
+#avatar:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+#username{
+    position: fixed;
+    right:55px;
+    top:36px;
+    color: white;
+    font-family:'Microsoft YaHei';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.userinfo:hover .subinfo{
+    display:block;
+}
+
+.subinfo{
+    width: 500px;
+    height: 250px;
+    display: none;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+}
+
+#user_introduce{
+    position:fixed;
+    right:54px;
+    top:134px;
+    border-bottom: 1px solid brown;
+}
+
+#sex{
+    position:fixed;
+    right:150px;
+    top:187px;
+    border-bottom: 1px solid brown;
+}
+
+#birth{
+    position:fixed;
+    right:54px;
+    top:188px;
+    border-bottom: 1px solid brown;
+}
+
+#locat{
+    position:fixed;
+    right:52px;
+    top:238px;
+    border-bottom: 1px solid brown;
+}
+
+#info_set{
+    position:fixed;
+    right:53px;
+    top:284px;
+    color:black;
+}
+
+
+.LEFT{
+    z-index: 99;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    background-color: rgba(80,80,80,0.7);
+}
+
+.listname{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.listname>div{
+    width: 250px;
+    height: 35px;
+    margin: 0px 0px 0px;
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    padding: 25px 25px 0px 0px;
+}
+
+.listname>div:hover{
+    border-bottom: 2px solid #ffc773;
+}
+
+#findmusic:hover{
+    color:#ffc773;
+}
+
+#localmusic:hover{
+    color:#ffc773;
+}
+
+.mymusic_list:hover{
+    color:#ffc773;
+}
+
+
+
+#mymusic_list_sub{
+    width: 275px;
+    height: 200px;
+    display: none;
+}
+
+
+#mymusic_list_sub>div{
+    width: 160px;
+    height: 35px;
+    color: white;
+    font-size: 22px;
+    margin: 15px 85px 0px;
+    padding: 6px 30px 0px 0px;
+}
+
+#mylike:hover{
+    color:#ffc773;
+    border-bottom: 2px solid #ffc773;
+}
+
+#list1:hover{
+    color:#ffc773;
+    border-bottom: 2px solid #ffc773;
+}
+
+#RIGHT{
+    widows: 100%;
+    height:2000px;
+    position: relative;
+    top:100px;
+}
+
+.search{
+
+}
+
+.songlist{
+
+}
+
+.BOTTOM{
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+}
+
+.playbutton{
+    
+}
+
+#before{
+    width: 100px;
+    height: 80px;
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+}
+
+#play{
+    width: 100px;
+    height: 80px;
+    position: fixed;
+    left: 354px;
+    bottom: 4px;
+    background:url(../images/play.png) no-repeat center bottom;
+    background-size:cover;
+    border:0px;
+    z-index: 10;
+}
+#stop{
+    width: 100px;
+    height: 80px;
+    position: fixed;
+    left: 354px;
+    bottom: 4px;
+    background:url(../images/stop.png) no-repeat center bottom;
+    background-size:cover;
+    border:0px;
+    z-index: 10;
+}
+
+#replay{
+    width: 100px;
+    height: 80px;
+    position: fixed;
+    right: 124px;
+    bottom: 26px;
+    background: url(../images/replay.png) no-repeat center bottom;
+    background-size: 50px;
+}
+
+#next{
+    width: 115px;
+    height: 100px;
+    position: fixed;
+    left: 130px;
+    bottom: 0px;
+}
+
+#songname_botm{
+    position: fixed;
+    left: 50px;
+    bottom: 25px;
+    font-size: 25px;
+}
+
+#songer_botm{
+    position: fixed;
+    left: 50px;
+    bottom: 10px;
+    font-size: 15px;
+}
+
+.songstatus{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 250px;
+    bottom: 0px;
+}
+
+#status_pic{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 250px;
+    bottom: 0px;
+    border-radius:100%;
+}
+
+#discpointer_pic{
+    width: 70px;
+    height: 60px;
+    position: fixed;
+    left: 250px;
+    bottom: 40px;
+}
+
+#mask{
+    width: 24px;
+    height: 32px;
+    position: fixed;
+    left: 406px;
+    bottom: 30px;
+    background-color: white;
+    z-index: 4;
+}
+
+.music{
+    width: 1300px;
+    height: 100px;
+    position: fixed;
+    left: 400px;
+    bottom: 30px;
+}

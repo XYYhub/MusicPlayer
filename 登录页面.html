@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>是登陆界面啊！</title>
+<script type="text/javascript">
+var mh = 0;//高度
+var step = 1;//每次变化的量
+var ms = 2;//循环时间
+function toggle(o){
+ if (!o.tid)o.tid = "_" + Math.random() * 100;
+ if (!window.toggler)window.toggler = {};
+ if (!window.toggler[o.tid]){
+  window.toggler[o.tid]={
+   obj:o,
+   maxHeight:o.offsetHeight,
+   minHeight:mh,
+   timer:null,
+   action:1
+  };
+ }
+ o.style.height = o.offsetHeight + "px";
+ if (window.toggler[o.tid].timer)clearTimeout(window.toggler[o.tid].timer);
+ window.toggler[o.tid].action *= -1;
+ window.toggler[o.tid].timer = setTimeout("anim('"+o.tid+"')",ms );
+}
+function anim(id){
+ var t = window.toggler[id];
+ var o = window.toggler[id].obj;
+ if (t.action < 0){
+  if (o.offsetHeight <= t.minHeight){
+   clearTimeout(t.timer);
+   return;
+  }
+ }
+ else{
+  if (o.offsetHeight >= t.maxHeight){
+   clearTimeout(t.timer);
+   return;
+  }
+ }
+ o.style.height = (parseInt(o.style.height, 10) + t.action * step) + "px";
+ window.toggler[id].timer = setTimeout("anim('"+id+"')",ms );
+}
+</script>
+<style type="text/css">
+div.xx{
+ overflow:hidden;
+ position: absolute;
+top: 0px;
+left: 0;
+}
+div.xx h5{
+ border-width:0 0 1px;
+ padding:0;margin:0;height:30px;
+ line-height:30px;cursor:pointer;
+ background:#2459a2;
+ opacity: 0.5;
+ text-align: center;
+}
+</style>
+<style>
+        .pg_header{
+            position: relative;
+            height: 90px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #2459a2; 
+            line-height: 48px;
+        }
+        .pg_header .logo{
+            margin: 0 auto;
+            float: left;
+           
+        }
+        .pg_dl{
+            left: 400px;
+            display: inline-block;
+            padding: 20px 40px;
+            color: white;
+        }
+        .pg_header .pg_dl:hover{
+            background-color: #2459fb;
+            cursor: pointer;
+        }
+        .left{
+            margin-top: 20px;
+            width: 530px;
+            display: inline-block;
+            float: left;        
+        }
+        .pg_body{
+            margin-top: 50px;
+            font-size: 16px;
+            display: inline-block;
+            width: 200px;
+        }
+        .pg_body .menu{
+            width: 800px;
+            padding: 15px;    
+            float: left;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            width: 200px;
+            height: 25px;
+            border-radius: 6px;
+        }
+        input[type="password"]{
+            width: 200px;
+            height: 25px;
+            border-radius: 6px;
+        }
+        input[type="button"]{
+            background-color: #555555;
+               border: none;
+            color: white;
+            padding: 4px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]{
+            background-color: #555555;
+               border: none;
+            color: white;
+            padding: 4px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .kong{
+            margin-top: -54px;
+            margin-left: 125px;
+            float:left;
+            padding: 15px;
+        }
+        .img{
+            width: 50px;
+            height: 40px;
+        }
+        .can{
+            width: 1533px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+                }
+        .tian{
+            color: red;
+            float: right;
+            font-size: 12px;
+            margin-right: -105px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+    <body id="i88" style="margin-left:120px;margin-top: 275px;">
+        <div class="xx"><h5 onclick="toggle(this.parentNode)">   </h5>
+            <div class = "pg_header">
+                <div class = "logo"><img src="images/微信图片_20190828084011.png"></div>
+                <a class="pg_dl" id="i77">登录</a>    
+            </div>
+            <div><img src="images/dd.jpg"  style="position: relative; top:25px; left:650px; width:220px;height: 220px; border-radius:150px;overflow: hidden;"></div>
+            <form name="tijiao" method="post" onsubmit="return check()"  action="index.html">
+                <div class="left"></div>
+                <div class="pg_body">
+                        <div class="menu">用户名:</div>
+                            <div class="kong">
+                                <input id="text1" type="text" name="01" placeholder="请输入用户名" onblur="check()"><span id="div1" class="tian" style="margin-top: 6px">*(为必填)<span>
+                            </div>
+                        <div class="menu">密码:</div>
+                            <div class="kong">
+                                <input id="text2" type="password" name="02" onblur="check()">
+                                <span id="div2" class="tian" style="margin-top: -20px">*(为必填)</span>
+                            </div>
+                </div>
+                
+                <div class="can">
+                    <a href="index.html">
+                    <input id="i111" type="submit" name="002" value="登 录" style=" position: relative; top: -503px;">
+                    </a>
+                    <p style="width: 4px;display: inline-block;"></p>
+                   <a href="注册页面.html">
+                    <input id="i222" type="button" name="004" value="未注册，点击注册" style=" position: relative;  top: -503px;">
+                    </a>
+                </div>
+            </form>
+        </div>
+            <script type="text/javascript">
+                    //刷新or取消
+                    document.getElementById('i77').onclick = function(){
+                        location.reload();
+                    }
+        
+                    //用户名验证
+                    function checkname(){ 
+                        var div = document.getElementById("div1"); 
+                        div.innerHTML = ""; 
+                        var name1 = document.tijiao.text1.value; 
+                        if (name1 == "") { 
+                        div.innerHTML = "用户名不能为空！"; 
+                        document.tijiao.text1.focus(); 
+                        return false; 
+                    } 
+                        if (name1.length < 2 || name1.length > 16) { 
+                        div.innerHTML = "长度2-16个字符"; 
+                        document.tijiao.text1.select(); 
+                        return false; 
+                    } 
+                        var charname1 = name1.toLowerCase(); 
+                        for (var i = 0; i < name1.length; i++) { 
+                        var charname = charname1.charAt(i); 
+                        if (!(charname >= 0 && charname <= 9) && (!(charname >= 'a' && charname <= 'z')) && (charname != '_')) { 
+                            div.innerHTML = "用户名包含非法字符"; 
+                            document.form1.text1.select(); 
+                            return false; 
+                        } 
+                    } 
+                        return true;
+                }
+        
+                    //密码验证
+                    function checkpassword(){ 
+                        var div = document.getElementById("div2"); 
+                        div.innerHTML = ""; 
+                        var password = document.tijiao.text2.value; 
+                        if (password == "") { 
+                        div.innerHTML = "密码不能为空"; 
+                        document.tijao.text2.focus(); 
+                        return false; 
+                    } 
+                        if (password.length < 4 || password.length > 20) { 
+                        div.innerHTML = "密码长度为4-20位"; 
+                        document.tijiao.text2.select(); 
+                        return false; 
+                        } 
+                        return true; 
+                }
+        
+                    function check(){ 
+                    if (checkname() && checkpassword()) { 
+                    return true; 
+                    } 
+                    else { 
+                    return false; 
+                } 
+            } 
+            </script>
+</html>
+</body>
+</html>

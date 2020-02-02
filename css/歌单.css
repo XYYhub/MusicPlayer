@@ -1,0 +1,275 @@
+ 
+  
+   #musiclist1{
+       display:none;
+       position: relative;
+        left: 300px;
+        top: 200px;
+       
+   }
+   #musiclist2{
+       display:none;
+       z-index:-2;
+       position: relative;
+        left: 300px;
+        top: 200px;
+   }
+   #musiclist3{
+       display:none;
+       z-index:-3;
+       position: relative;
+        left: 300px;
+        top: 200px;
+   }
+   #musiclist4{
+       display:none;
+       z-index:-4;
+       position: relative;
+        left: 300px;
+        top: 200px;
+   }
+  .bg{
+      width:1570px;
+      height:1480px;
+      
+      
+  }
+  
+    .first{
+    float:left;
+    position:relative;
+    left:80px;
+}		
+    .five{
+    float:left;
+    position:relative;
+    left:10px;
+    }
+    .five3{
+    float:left;
+    position:relative;
+    left:250px;
+    top:-140px;
+    }
+  .caidan{
+            clear:both;
+            float:left;
+            list-style:none;
+            width: 1500px;
+            position: absolute;
+            top: 340px;
+            background-color: black;
+            color: #666666;
+            opacity: 0.6;
+            
+        }
+        .caidan li{
+            float:left;
+            margin-right: 28px;
+            width: 230px;
+            
+            margin-left: 27px;
+        }
+        .erji{
+            list-style:none;
+            font-size:18;
+            float:left;
+        }
+        .erji li{
+            clear:both;
+            margin-left:-40px;
+            
+            margin-top:5px;
+        }
+  .a{
+    color:#AAAAAA;
+    text-decoration:none;
+    cursor:pointer;
+    }
+  .a:hover{
+    text-decoration:underline
+    }
+    
+    .b{
+    text-decoration:none;
+    }
+    
+    .b:hover{
+    text-decoration:underline
+    }
+
+    .product{
+       position:relative;
+       
+       
+       }
+  .product:hover span{
+      height:133px;
+      opacity:0.9;
+      }
+  .product span{
+      position:absolute;
+      text-align:center;
+      width:100%;
+      left:-130px;
+      height:0px;
+      background-color:black;
+      opacity:0;
+    top:27px;
+    color:red;
+      }
+    .pointer{
+    cursor:pointer;
+    }
+      
+
+
+
+
+
+
+
+        #total{
+            width:1920px;
+            height:880px;
+            
+        }
+        #musicInfor1{
+            position:absolute;
+            top:0;
+            left:0;
+            width:1920px;
+            height:880px;
+            display:none;
+        }
+        #musicInfor2{
+            position:absolute;
+            top:0;
+            left:0;
+            width:1920px;
+            height:880px;
+            display:none;
+        }
+        #musicInfor3{
+            position:absolute;
+            top:0;
+            left:0;
+            width:1920px;
+            height:880px;
+            display:none;
+        }
+        .bgp{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+
+
+        .left{
+            width: 864px;
+            height: 880px;
+            float: left;
+        }
+        .musicCD{
+            width:864px;
+            height: 680px;
+            position: relative;
+            top:30px;
+            left:250px;
+        }
+        .cdp{
+            position:absolute;
+            margin-top:100px;
+            margin-left:150px;
+        }
+        .dot{
+            width: 864px;
+            height: 200px;
+            text-align: center;
+            color: #ccc;
+            position: relative;
+            left: 310px;
+            top: -70px;
+        }
+        .linkdot{
+            width:160px;
+            height: 200px;
+            float:left;
+            line-height: 80px;
+        }
+        .astyle{    
+            color:black;
+            border:1px solid grey
+        }
+
+        
+
+        .right{
+            width: 1056px;
+            height: 880px;
+            float: left;
+        }
+        .song{
+            width: 1056px;
+            height: 200px;
+            position: relative;
+            left: 50px;
+            top: 135px;
+        }
+        .name{
+            margin-left: 1056px;
+            top: 48px;
+            width: 500px;
+            font-size: 32px;
+        }
+        .infor{
+            margin-left: 1056px;
+            font-size: 16px;
+            width: 500px;
+        }
+        #getback{
+            position:absolute;
+            margin-top: -140px;
+            margin-left:900px;
+        }
+
+
+
+        /*滚动歌词*/
+        .lyric1{
+            position: relative;
+            width: 1056px;
+            height: 680px;
+            text-align: left;
+            color: black;
+            top: 70px;
+            left: 1066px;
+        }
+        .lyric2{
+            position:relative;
+            width: 1056px;
+            height: 680px;
+            text-align: left;
+            color:black;
+            top: 70px;
+            left: 1066px;
+        }
+        .lyric3{
+            position:relative;
+            width: 1056px;
+            height: 680px;
+            text-align: left;
+            color:black;
+            top: 70px;
+            left: 1066px;
+        }
+        
+        #lyric{
+            list-style: none;
+        }
+
+       
+      
